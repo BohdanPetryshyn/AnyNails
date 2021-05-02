@@ -1,15 +1,16 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "@nails/mobile-app",
+  "main": "__generated__/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "debug": "REACT_DEBUGGER=\"unset ELECTRON_RUN_AS_NODE && open -g 'rndebugger://set-debugger-loc?port=19000' ||\" npm start",
+    "start": "REACT_DEBUGGER=\"unset ELECTRON_RUN_AS_NODE && open -g 'rndebugger://set-debugger-loc?port=19000' ||\" expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --watchAll",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
-    "lint": "eslint \"**/*.{ts,tsx}\" --fix"
+    "lint": "eslint \"**/*.{ts,tsx}\" --fix",
+    "postinstall": "expo-yarn-workspaces postinstall"
   },
   "jest": {
     "preset": "jest-expo"
@@ -66,6 +67,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "expo-yarn-workspaces": "^1.5.1",
     "jest-expo": "~40.0.0",
     "prettier": "^2.2.1",
     "redux-devtools": "^3.7.0",

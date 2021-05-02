@@ -14,3 +14,4 @@ web-build/
 
 .idea/
 .expo-shared/
+__generated__/

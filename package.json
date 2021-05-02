@@ -6,5 +6,8 @@
   "scripts": {
     "inst": "npm install --package-lock-only --no-package-lock --prefix",
     "postinst": "npm install"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.4"
   }
 }

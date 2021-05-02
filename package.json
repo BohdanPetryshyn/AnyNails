@@ -1,0 +1,10 @@
+{
+  "name": "@nails/root",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "inst": "npm install --package-lock-only --no-package-lock --prefix",
+    "postinst": "npm install"
+  }
+}
